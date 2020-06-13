@@ -87,6 +87,7 @@ a:focus {
     background-color : transparent;
     border : 3px solid white;
     color : white;
+    margin-top: 4px;
 }
 
 #intro-buttons button select {
