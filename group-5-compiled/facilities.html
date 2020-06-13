@@ -1,183 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Hotel home page</title>
-<meta charset="utf-8">
-<link rel="shortcut icon" type="image/x-icon" href="img/shortcut_logo.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/shortcut_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<div class="container-body">
-<div class="nav-image ">
-
-
-<div class="container">
-   <div class="row">
-                        <div class="col col-sm-3 col-md-3 mt-4">
-                            <!----start-logo---->
-                            <div class="well logo">
-                                <a href="./"><img src="img/logo.png"></a>
-                            </div>
-                            <!----//End-logo---->
-                        </div>
-                        <div class="well col col-sm-9 col-md-9  nav-right mt-5">
-                             <input class="menu-btn" type="checkbox" id="menu-btn" />
-                            <label class="menu-icon" for="menu-btn"><svg viewBox="0 0 100 80" width="40" height="40">
+    <script
+      src="https://kit.fontawesome.com/da014721b9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- header -->
+      <header class="header">
+       
+         <div class="container">
+                <!---- start-header---->
+                
+                  <div class="row">
+            <div class="col col-sm-3 col-md-3 mt-4">
+              <!----start-logo---->
+              <div class="well logo">
+                <a href="./"><img src="img/logo.png"></a>
+              </div>
+              <!----//End-logo---->
+            </div>
+            <div class="well col col-sm-9 col-md-9  nav-right mt-5">
+               <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><svg viewBox="0 0 100 80" width="40" height="40">
   <rect width="100" height="10" fill='white'></rect>
   <rect y="30" width="100" height="10" fill='white'></rect>
   <rect y="60" width="100" height="10" fill='white'></rect>
 </svg></label>
 
-                            <ul style="float: right" class="well header-nav">
-                                <li><a href="./">Home</a></li>
-                                <li><a href="./rooms-rates.html">Rooms</a></li>
-                                <li><a href="./facilities.html">Facilities</a></li>
-                                <li><a href="./contact.html">Contact Us</a></li>
+              <ul style="float: right" class="well header-nav">
+                <li><a href="./">Home</a></li>
+                <li><a href="./rooms-rates.html">Rooms</a></li>
+                <li><a href="./facilities.html">Facilities</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
 
 
-                            </ul>
-                        </div>
-                    </div>
-</div>
-
-
-
-
-<div class="introduction">
-    <div id="enjoy">Enjoy a Luxury</div>
-    <div id="experience2">experience</div>
-</div>
-
-<div id="intro-buttons"> 
-<button class="buttonsA">Arrival <i class="far fa-calendar-alt"></i></button>
-
-<button class="buttonsA"  >Departure <i class="far fa-calendar-alt"></i></button>
-
-<button class="buttonsA">
-    <select>
-        <option>Adult</option>
-        <option>Children</option>
-        <option>Infant</option>
-    </select>
-</button>
-
-<button class="buttonsA">
-    <select>
-        <option>Rooms</option>
-        <option>Double Bedroom</option>
-        <option>Standard Suite</option>
-        <option>Kign's Suite</option>
-    </select>
-</button>
-
-<button id="book">Book</button>
-</div>
-
-<div id="arrow-down"><i class="fas fa-chevron-down" style="color: #FFC300"></i></div>
-
-</div>
-
-<div class="about-us">
-<div><img src="img/Rectangle7.png" alt="pool image"  class="rectangle7"/></div>
-<div class="about-note">
-    <h1>About Us</h1>
-    <div class="about-paragraph">
-        <p>FLUX is a five star hotel with breathtaking views that<br />
-        embrace the plain of the surrounding areas. Our aim is<br /> 
-         to provide bespoke service and beautiful experiences in <br />
-         a luxurious and sophisticated environment, where love <br/>
-         birds or travelers will find a place like home. our rooms<br/>
-          are designed to transport you into an environment made<br/>
-         for leisure. Take your mind off stressfull activities of<br/>
-        day to day lifestyle and find a private paradise <br/>
-         in our hotel. </p>
-    </div>
-</div>
-</div>
-
-<div class="choose-us"> 
-    <div style="margin-left: none"><img src="img/Rectangle9.png" alt="pool image" class="rectangle9" /></div>
-    <div class="choose-note">
-        <h1>Why Choose Us</h1>
-        <div class="about-paragraph-choose">
-            <ul>
-                <li>Our Flair</li>
-                <li>Our Passion</li>
-                <li>Our Charm</li>
-                <li>Our Quality Service</li>
-                <li>Our Affordable Price</li>
-                <li>Our Convenient Location</li>
-            </ul>
-    </div>
-</div>
-
-</div>
-
-<div class="rooms">
-    <h1>Rooms</h1>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div><img src="img/Rectangle11.png" alt="pool image" width="100%" height="440px" /></div>
-            <div class="positioning">
-                <span>Double Bedroom</span> 
-                <div class="arrow-pointer">
-                    <i class="fas fa-chevron-right"></i>
-                </div></div>
+              </ul>
+            </div>
           </div>
+                </div>
 
-          <div class="col-sm-4">
-            <div><img src="img/Rectangle12.png" alt="pool image" width="100%" height="440px" /></div>
-            <div class="positioning">
-                <span>Standard Suite</span> 
-                <div class="arrow-pointer">
-                    <i class="fas fa-chevron-right"></i>
-                </div></div>
-          </div>
 
-          <div class="col-sm-4">
-            <div><img src="img/Rectangle13.png" alt="pool image" width="100%" height="440px" /></div>
-            <div class="positioning">
-                <span>King's Suite</span> 
-                <div class="arrow-pointer">
-                    <i class="fas fa-chevron-right"></i>
-                </div></div>
+      </header>
+      <!-- top with the background image -->
+      <section class="section section-top">
+        <div class="section-top-text">
+          <h1>Facilities</h1>
+        </div>
+      </section>
+      <!-- middle -->
+      <section class="section section-middle">
+        <div class="container">
+          <div class="section-middle-flex">
+            <div class="section-middle-grid">
+              <div class="section-middle-box">
+                <div class="section-middle-box-text">Swimming pool</div>
+              </div>
+              <div class="section-middle-box">
+                <div class="section-middle-box-text">Gym</div>
+              </div>
+              <div class="section-middle-box">
+                <div class="section-middle-box-text">Bar</div>
+              </div>
+              <div class="section-middle-box">
+                <div class="section-middle-box-text">Spa</div>
+              </div>
+              <div class="section-middle-box">
+                <div class="section-middle-box-text">Banquet room</div>
+              </div>
+              <div class="section-middle-box">
+                <div class="section-middle-box-text">Parking lot</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-</div>
 
-<div class="testimonial">
-    <h1>Testimonials</h1>
-    <div>
-    <p>
-        "I visited FLUX with my lover and it was a beutiful experience. The Hotel is at a nice Location<br>
-         close to the mall and only few miles away from the sea! it is a really clean place(daily cleaned),<br>
-         the hotel has a lot of space and it's very peaceful. We didn't use the spa, swimming pool or gym <br>
-         but, everything is well maintained over there. They have a really good customer service. I would <br>
-         totally recommend it and definitely go back when am in the neighbourhood!... "
-    </p>
-    <div class="testimonial-name" style="float: right;">-Ronaldo</div>
-    <div style="clear:both;"></div>
-    <div class="testimonial-city" style="float: right;">Lagos</div>
-         <div style="clear:both;"></div>
-    </div>
-</div>
 
-</div>
+          
 
 
 
@@ -230,9 +145,9 @@
   <button type="submit" class="btn btn-warning">Submit</button>
 </form>
 
-                        <a href="./" class="well text-center mt-5" style="display: block;">
-                                <img src="img/logo.png">
-                            </a>
+            <a href="./" class="well text-center mt-5" style="display: block;">
+                <img src="img/logo.png">
+              </a>
         
 
       </div>
@@ -305,6 +220,6 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAAL
   </div>
 
 </footer>
-
-</body>
+    </div>
+  </body>
 </html>

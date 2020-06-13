@@ -64,14 +64,13 @@ a:focus {
 .introduction{
     color : white;
     margin-top : 8%;
-    margin-left : 10%;
     font-size : 35px;
     font-weight : bolder;  
+    text-align: center;
 }
 
 #experience2{
     font-size : 30px;
-    margin-left : 15%;
 }
 
 #intro-buttons {
@@ -88,6 +87,7 @@ a:focus {
     background-color : transparent;
     border : 3px solid white;
     color : white;
+    margin-top: 4px;
 }
 
 #intro-buttons button select {
@@ -165,7 +165,7 @@ a:focus {
 .rectangle7{
     width: 280px;
     height : 280px;
-
+    object-fit: fill;
 }
 
 .about-paragraph{
@@ -223,9 +223,7 @@ margin-bottom : 4%;
 
 
 .rooms{
-margin-left : 1%;
 margin-top : 50%;
-margin-right : 10%;
 }
 
 .rooms h1 {
@@ -234,6 +232,11 @@ color : #86032D;
 text-decoration: underline  #FFC300;
 font-weight : bold;
 margin-bottom: 3%;
+}
+
+.rooms *:hover{
+  cursor: pointer;
+  opacity: 0.99;
 }
 
 .col-sm-4 span{
@@ -310,11 +313,11 @@ color : rgb(13, 107, 231) !important;
 .rectangle7{
     width: 650px;
     height : 280px;
-
+    object-fit: fill;
 }
 .nav-image{
     background-image : url("../img/background-img.jpg");
-    background-size : cover;
+    background-size : 100% 100%;
     background-color: black;
     width : inherit;
     height : 100%;
@@ -323,20 +326,18 @@ color : rgb(13, 107, 231) !important;
 
 .introduction{
     color : white;
+    text-align: center;
     margin-top : 8%;
-    margin-left : 25%;
     font-size : 90px;
     font-weight : bolder;  
 }
 
 #experience2{
     font-size : 60px;
-    margin-left : 12%;
 }
 
 #intro-buttons {
     margin-top : 9%;
-    margin-left : 23%;
    
 }
 
@@ -348,6 +349,7 @@ color : rgb(13, 107, 231) !important;
     background-color : transparent;
     border : 3px solid white;
     color : white;
+    margin-top: 5px;
 }
 
 #intro-buttons button select {
@@ -474,9 +476,7 @@ color : rgb(13, 107, 231) !important;
 }
 
 .rooms{
-    margin-left : 10%;
     margin-top : 20%;
-    margin-right : 10%;
 }
 
 .rooms h1 {
@@ -582,9 +582,9 @@ color : rgb(13, 107, 231) !important;
 }
 
 .bg{
-	background: url(../img/a.png) no-repeat 0px 0px;
-	background-size: 100%  100%;
-	min-height: 700px;
+	background: url(../img/a.png) no-repeat;
+	background-size: 100% 100%;
+  background-position: center center;
 	position:relative;
 }
 
@@ -594,12 +594,6 @@ color : rgb(13, 107, 231) !important;
 	display: inline-block;
 	width: auto;
 	height: auto;
-}
-
-.header{
-	padding: 1em 0;
-	min-height: 154px;
-	
 }
 
 
@@ -945,20 +939,15 @@ section.get_in_touch{
 /**********FACILITIES PAGE************/
 
 
-
-
-
-
 :root {
   --display: flex;
   --justifyContent: center;
   --alignItems: center;
-  --fontHeading: "Playfair Display", serif;
 }
-* {
-  padding: 0;
-  margin: 0;
-  font-family: var(--fontFamily);
+
+.section-middle-box:hover{
+  cursor: pointer;
+  opacity: 0.9;
 }
  /*header */
  #app{
@@ -967,13 +956,12 @@ section.get_in_touch{
 .header {
   position: absolute;
   width: 100%;
-  padding: 0 30px;
 }
 
  /*top with the background image */
 .section-top {
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background-image: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.472),
@@ -981,14 +969,15 @@ section.get_in_touch{
     ),
     url("../img/header_img.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section-top-text h1 {
   font-size: 65px;
-  font-family: var(--fontHeading);
+  font-family: "Playfair Display";
 }
 
  /*middle */
@@ -1004,7 +993,7 @@ section.get_in_touch{
   display: var(--display);
   justify-content: var(--justifyContent);
   font-weight: 600;
-  font-family: var(--fontHeading);
+  font-family: "Playfair Display";
   font-size: 30px;
   text-align: center;
 }
@@ -1097,7 +1086,6 @@ section.get_in_touch{
   .header {
     width: 1300px;
     left: 50%;
-    margin-left: -650px;
   }
  
 }
