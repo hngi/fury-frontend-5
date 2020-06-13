@@ -164,7 +164,7 @@ a:focus {
 .rectangle7{
     width: 280px;
     height : 280px;
-
+    object-fit: fill;
 }
 
 .about-paragraph{
@@ -312,11 +312,11 @@ color : rgb(13, 107, 231) !important;
 .rectangle7{
     width: 650px;
     height : 280px;
-
+    object-fit: fill;
 }
 .nav-image{
     background-image : url("../img/background-img.jpg");
-    background-size : cover;
+    background-size : 100% 100%;
     background-color: black;
     width : inherit;
     height : 100%;
@@ -582,7 +582,7 @@ color : rgb(13, 107, 231) !important;
 
 .bg{
 	background: url(../img/a.png) no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
   background-position: center center;
 	position:relative;
 }
@@ -960,7 +960,7 @@ section.get_in_touch{
  /*top with the background image */
 .section-top {
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background-image: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.472),
